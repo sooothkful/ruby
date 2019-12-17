@@ -1,9 +1,5 @@
 puts "Give me a number"
-first_number=2300
-first_number = gets.to_i
-mid_number = first_number + 5
-mid_number *= 2
-mid_number -= 4
-mid_number /= 2
-final_number = mid_number - first_number
+final_number = 1555
+final_number = gets.to_i
+final_number = (((final_number + 5)*2)-4)/2
 puts "#{final_number}"
