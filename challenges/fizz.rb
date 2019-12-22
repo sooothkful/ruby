@@ -1,17 +1,13 @@
-number = '1'
-puts number
-number = number.to_i
-
-while (number < 100)
-number = number.to_i + 1
-puts number
-number_zero_div_five = number % 5
-number_zero_div_three = number % 3
-buzz = "buzz"
-fizz = "fizz"
- if (number_zero_div_five == 0)
-  puts buzz
-elsif (number_zero_div_three == 0)
-   puts fizz
- end
+number = 0
+while number < 100
+  if number%3 == 0 && number%5 == 0
+    puts "FizzBuzz"
+  elsif number%3 == 0
+    puts "Fizz"
+  elsif number%5 == 0
+      puts "Buzzz"
+  else
+      puts number
+  end
+  number+=1
 end
